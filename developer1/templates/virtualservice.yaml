@@ -11,7 +11,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "hello-world.dev.caas"
+    - "hello-world-developer1.dev.caas"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -19,7 +19,7 @@ metadata:
   name: hello-world
 spec:
   hosts:
-  - "hello-world.dev.caas"
+  - "hello-world-developer1.dev.caas"
   gateways:
   - hello-world
   http:
